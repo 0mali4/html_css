@@ -6,6 +6,7 @@ const birthday1 = document.querySelector('.birthday');
 const age1 = document.querySelector('.age');
 const info1 = document.querySelector('.info');
 const ava1 = document.querySelector('.profile-image');
+const emote1 = document.querySelector('.emote');
 
 const main_sh = document.querySelector('.base');
 const like_btn = document.querySelector('.love_button');
@@ -80,15 +81,54 @@ console.log(lines);
 let cur = 11;
 loadCharacter(cur);
 
+// like_btn.addEventListener('', function() {
+//   cur++;
+//   loadCharacter(cur);
+//   if (cur == 100){cur = 11;}
+// });
+let kl1 = 0 , kl2 = 0;
+
 like_btn.addEventListener('click', function() {
+  kl1++;
   cur++;
+  // console.log(kl1 , kl2);/////////////////
+    if (kl1 == 50 && kl2 == 0){
+      alert("You are a true fan of anime! 💖 or just weirdo💀");
+    }
+
   loadCharacter(cur);
   if (cur == 100){cur = 11;}
 });
 
+like_btn.addEventListener('mouseover', () => {
+  like_btn.classList.add('darken');
+  emote1.src = "Photos/happy_emote.jpeg";
+});
+
+like_btn.addEventListener('mouseout', () => {
+  like_btn.classList.remove('darken');
+  emote1.src = "Photos/neutral_emote.jpeg";
+});
+
 hate_btn.addEventListener('click', function() {
+  kl2++;
   cur++;
+  //  console.log(kl1 , kl2);/////////////////
+  if (kl1 == 0 && kl2 == 50){
+    alert("Why do you hate everyone so much? 💔 , Are you bululu?");
+  }
+
   loadCharacter(cur);
   if (cur == 100){cur = 11;}
+});
+
+hate_btn.addEventListener('mouseover', () => {
+  hate_btn.classList.add('darken');
+  emote1.src = "Photos/sad_emote.jpeg";
+});
+
+hate_btn.addEventListener('mouseout', () => {
+  hate_btn.classList.remove('darken');
+  emote1.src = "Photos/neutral_emote.jpeg";
 });
 });

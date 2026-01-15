@@ -63,3 +63,21 @@ background-position: center;
   /* transform: translateX(-50%); */
   cursor: pointer;
 }
+
+.emote {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+  position : absolute;
+  bottom : 15%;
+  left : 60%;
+}
+
+.darken {
+  filter: brightness(50%);
+  transition: filter 0.3s ease;
+}
