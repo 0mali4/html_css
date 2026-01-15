@@ -78,7 +78,7 @@ console.log(lines);
 
   ava1.src = character.image;
 }
-let cur = 11;
+let cur = 1;
 loadCharacter(cur);
 
 // like_btn.addEventListener('', function() {
@@ -97,7 +97,7 @@ like_btn.addEventListener('click', function() {
     }
 
   loadCharacter(cur);
-  if (cur == 100){cur = 11;}
+  // if (cur == 100){cur = 11;}
 });
 
 like_btn.addEventListener('mouseover', () => {
@@ -119,7 +119,7 @@ hate_btn.addEventListener('click', function() {
   }
 
   loadCharacter(cur);
-  if (cur == 100){cur = 11;}
+  // if (cur == 100){cur = 11;}
 });
 
 hate_btn.addEventListener('mouseover', () => {

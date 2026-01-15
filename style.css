@@ -80,6 +80,8 @@ background-position: center;
   position : absolute;
   bottom : 15%;
   left : 47%;
+  object-fit: cover; /* Scales the image to cover the container while maintaining aspect ratio, cropping the edges */
+  object-position: center;
 }
 
 .darken {
