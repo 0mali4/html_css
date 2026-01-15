@@ -1,0 +1,65 @@
+.base {
+    font-size: 25px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border-radius: 25px;
+  background-image: url(Photos/prf_bkgrnd.webp);
+  /* background-position: center; */
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 400px;
+  height: 550px;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  right:40%;
+    /* transform: translate(-50%, -50%); */
+    /* border-radius: 10%; */
+}
+.profile-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.love_button{
+/* font-size : 200%; */
+background-image: url(Photos/lv_btn.jpg);
+background-position: center;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  /* background-color: #4CAF50; */
+  /* color: white; */
+  text-align: center;
+  line-height: 60px;
+  font-size: 110px;
+  position: absolute;
+   top: 43%;
+  left: 23%;
+  /* transform: translateX(-50%); */
+  cursor: pointer;
+}
+.hate_button{
+/* font-size : 200px; */
+background-image: url(Photos/ht_btn.png);
+background-position: center;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  /* background-color: #fa0f0f; */
+  /* color: white; */
+  text-align: center;
+  line-height: 60px;
+  font-size: 110px;
+  position: absolute;
+   top: 43%;
+  right: 16%;
+  /* transform: translateX(-50%); */
+  cursor: pointer;
+}
