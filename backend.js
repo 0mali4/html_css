@@ -132,3 +132,5 @@ hate_btn.addEventListener('mouseout', () => {
   emote1.src = "Photos/neutral_emote.jpeg";
 });
 });
+
+// 'use strict'
